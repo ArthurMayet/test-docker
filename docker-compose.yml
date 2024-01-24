@@ -30,7 +30,7 @@ services:
       - "8001:80"  
 
   front-service:
-    image: my-registry.io/my-application/front:1.0
+    image: tomcat:9.0.85-jre17-temurin-jammy
     container_name: frontend-container
     depends_on:
       - reverse-proxy
